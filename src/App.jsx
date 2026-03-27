@@ -6,10 +6,10 @@
 // import Component from './component'
 // import List from './list/List'
 import Nav from './header/Nav'
-import Footer from './header/footer'
 import Menu from './pages/Menu'
 import Home from './pages/Home'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Foot from './header/Foot'
 function App() {
 
   return (
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="/menu" element={<Menu/>}></Route>
       </Routes>
-      <Footer/>
+      <Foot/>
       </BrowserRouter>
     </>
   )
